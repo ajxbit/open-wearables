@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ArrowRight from '@lucide/svelte/icons/arrow-right';
+	import { pageTitle } from '$lib/branding';
 	import Check from '@lucide/svelte/icons/check';
 	import LinkButton from '$lib/components/ui/LinkButton.svelte';
 	import PairingShell from '$lib/components/pairing/PairingShell.svelte';
@@ -11,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Connected · Open Wearables</title>
+	<title>{pageTitle(data.brandName, 'Connected')}</title>
 </svelte:head>
 
 <PairingShell title="{what} is connected" lead="Data will start arriving shortly.">
