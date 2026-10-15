@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ArrowRight from '@lucide/svelte/icons/arrow-right';
-	import { pageTitle } from '$lib/branding';
 	import Check from '@lucide/svelte/icons/check';
+	import { pageTitle } from '$lib/branding/branding';
 	import LinkButton from '$lib/components/ui/LinkButton.svelte';
 	import PairingShell from '$lib/components/pairing/PairingShell.svelte';
 	import type { PageData } from './$types';
